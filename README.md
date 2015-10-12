@@ -14,8 +14,8 @@ and clarifications may be made at any time and are part of this assignment.
 
 Assignment is done in groups of 1, 2 or 3 people.
 There is no marking penalty for working in a group.
-A group member's grade is zero if any group member forgets to
-include this person's name at submit time. 
+A group member's grade is zero if any group member forgets to include this person's name at submit time. 
+
 ------------------------------------------------------------------------
 
 Topics: 
