@@ -213,7 +213,9 @@ For example:
 Robustness and Assumptions:
 --------------------------
  -Assume user provides correct input on stdin 
+ 
  -Assume memory is always available (malloc calloc, etc)  
+ 
  -File A2addendum.txt will be updated periodically with additional assignment
   assumptions and QA. Everything in A2addendum.txt must also be considered 
   part of this assignment.
