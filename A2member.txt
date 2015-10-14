@@ -1,0 +1,26 @@
+Edit this in appropriately:
+
+    Submit Person: Name and CS userid of your group's SUBMIT PERSON
+     
+    NAME: Aumkar Prajapati
+     UID: aprajapa
+     Sec: 022
+     SID: 500563404
+     TAs: David Tenty, Jaspreet Bassan 
+     LAB: Wednesday, 3PM - 4PM
+     
+     Other Members: Name and CS userid of all remaining group members
+
+    NAME: your name, 
+     UID:  your CS userid, 
+     Sec:  your section,
+     SID:  your student ID number, 
+     TAs:  your TA(s), 
+     LAB:  your lab day/time
+     
+   NAME: your name, 
+     UID:  your CS userid, 
+     Sec:  your section,
+     SID:  your student ID number, 
+     TAs:  your TA(s), 
+     LAB:  your lab day/time
