@@ -3,13 +3,18 @@
 #include "vector.h"
 
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
  // read in file
- printf("filename: %s", argv[1]);
+ printf("filename: %s\n", argv[1]);
 
- FILE *file = fopen(argv[1], "r");
- scanf("%s",  file);
+    FILE *file;
+    file = fopen(argv[1], "r");
+    char c;
+ while ((c=fgetc(file))!=EOF)
+ {
+     printf("%c", c);
+ }
 
 
   return 0;

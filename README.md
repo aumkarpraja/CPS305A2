@@ -72,8 +72,13 @@ Rule:  From position i, the next position in the path must be either i+x,
        or i-x, where x is the non-negative integer stored in position i.
        There is no path possible from position i to position i+x if
        either of these 2 conditions hold:
+<<<<<<< HEAD
       
        position i+x is beyond the end of V.
+=======
+       
+       position i+x is beyond the start of V.
+>>>>>>> 6b8d9663d8dd828e758ccf8002f375b7fc9b52dd
        
        position i+x is already on the path.
        
