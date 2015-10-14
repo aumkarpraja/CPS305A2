@@ -73,6 +73,10 @@ Rule:  From position i, the next position in the path must be either i+x,
        There is no path possible from position i to position i+x if
        either of these 2 conditions hold:
        
+       position i+x is beyond the start of V.
+       
+       position i+x is already on the path.
+       
        There is no path possible from position i to position i-x if either of these 2 conditions hold:
        
        position i-x is beyond the start of V.
