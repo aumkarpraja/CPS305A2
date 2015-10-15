@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include "vector.h"
 
-
 int main(int argc, char **argv)
 {
     // read in file
@@ -10,6 +9,7 @@ int main(int argc, char **argv)
     
     FILE *file;
     file = fopen(argv[1], "r");
+    
     char c;
 
     // read in file while it hasn't reached the end
@@ -30,6 +30,9 @@ int main(int argc, char **argv)
         printf("%c", c);
         
     }
+    free(file); // free space used after file is done being read from
+    
+    
 
 
   return 0;
