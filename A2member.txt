@@ -18,9 +18,9 @@ Edit this in appropriately:
      TAs: David Tenty, Jaspreet Bassan
      LAB: Wednesday, 3PM - 4PM
      
-   NAME: your name, 
-     UID:  your CS userid, 
-     Sec:  your section,
-     SID:  your student ID number, 
-     TAs:  your TA(s), 
-     LAB:  your lab day/time
+   NAME: Carolyn Wang
+     UID:  c54wang 
+     Sec:  011
+     SID:  500530404 
+     TAs:   
+     LAB:  Wednesday 11PM-12PM
