@@ -14,7 +14,7 @@ Beause starting is 0, make algorithm to print out the shortest path to N-1 of th
 
 
 
-int main(int argc, char *argv[]) {
+int main() {
 	int size;
 	//int var;
 	Vector vector;
