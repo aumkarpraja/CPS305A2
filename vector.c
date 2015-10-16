@@ -6,7 +6,7 @@
 //Reads vector from stdin
 void VectorRead(Vector *V) {
 	printf("%d", V->size);
-	//printf("%lud ", sizeof(V) / sizeof(V[0]));
+    // Loop through size of vector and ask for each vector, (or all in one row if the user desires)
 	for (int i = 0; i < sizeof(V) / sizeof(V[0]); i++) {
 		printf("%d ", V->item[i]);
 	}

@@ -15,14 +15,15 @@ Beause starting is 0, make algorithm to print out the shortest path to N-1 of th
 
 
 int main() {
-	int size;
-	//int var;
+	
+    int size;
 	Vector vector;
 
-	printf("Input size of vector.\n");
+	printf("Input size of vector: ");
 	scanf("%d", &size);
-	
+    
 	vectorInit(&vector, size);
+    
 	for (int i = 0; i < size; i++) {
 		int var;
 		printf("Add a number to the vector.\n");
@@ -31,8 +32,4 @@ int main() {
 	}
 
 	vectorPrint(&vector);
-	//vector->size = 1;
-//	vector->item = malloc(sizeof(int) * vector->size);
-//	vector->item = 1;
-//	VectorRead(vector);	
 }
