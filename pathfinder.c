@@ -18,18 +18,26 @@ int main() {
 	
     int size;
 	Vector vector;
+    int var;
 
 	printf("Input size of vector: ");
 	scanf("%d", &size);
     
 	vectorInit(&vector, size);
     
-	for (int i = 0; i < size; i++) {
-		int var;
+	for (int i = 0; i < size-1; i++) {
+		
 		printf("Add a number to the vector.\n");
 		scanf("%d", &var);
+        if (var < 0)
+        {
+            printf("Invalid number, try again.\n");
+        }
+        else
 		vectorAdd(&vector, var, i);
 	}
-
+    vectorAdd(&vector, 0, size);
+    
+    // output the vectors, DEBUG
 	vectorPrint(&vector);
 }
