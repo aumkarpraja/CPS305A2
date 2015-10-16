@@ -1,39 +1,34 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "vector.h"
 
-int main(int argc, char **argv)
-{
-    // read in file
-    printf("filename: %s\n", argv[1]);
-    
-    FILE *file;
-    file = fopen(argv[1], "r");
-    
-    char c;
+//VectorRead function
+//Reads vector from stdin
+void VectorRead(Vector *V) {
+	printf("%d", V->size);
+	//printf("%lud ", sizeof(V) / sizeof(V[0]));
+	for (int i = 0; i < sizeof(V) / sizeof(V[0]); i++) {
+		printf("%d ", V->item[i]);
+	}
+}
 
-    // read in file while it hasn't reached the end
-    while ((c=fgetc(file))!=EOF)
-    {
-        // new lines should seperate the size and items in the array
-        if (c == '\n')
-        {
-            printf("THERE WAS A NEW LINE\n");
-        }
-        
-        // ignore spaces
-        else if (c==' ')
-        {
-            printf("space");
-        }
-        else
-        printf("%c", c);
-        
-    }
-    free(file); // free space used after file is done being read from
-    
-    
+//vectorInit function
+//Initializes the vector
+void vectorInit(Vector *V, int size) {
+	V->size = size;
+	V->item = malloc(sizeof(int) * V->size);
+}
 
+//vectorAdd function
+//Adds the vector to var
+void vectorAdd(Vector *V, int var, int index) {
+	V->item[index] = var;
+}
 
-  return 0;
+//vectorPrint function
+//Prints the vector value
+void vectorPrint(Vector *V) {
+	for (int i = 0; i < V->size; i++) {
+		printf("Vector Val: %d\n", V->item[i]);
+	}
 }

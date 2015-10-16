@@ -11,12 +11,12 @@ Edit this in appropriately:
      
      Other Members: Name and CS userid of all remaining group members
 
-    NAME: your name, 
-     UID:  your CS userid, 
-     Sec:  your section,
-     SID:  your student ID number, 
-     TAs:  your TA(s), 
-     LAB:  your lab day/time
+    NAME: Lawrence Lac 
+     UID: llac 
+     Sec: 022
+     SID: 500566642
+     TAs: David Tenty, Jaspreet Bassan
+     LAB: Wednesday, 3PM - 4PM
      
    NAME: your name, 
      UID:  your CS userid, 

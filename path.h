@@ -1,12 +1,14 @@
+//path.c
+
 typedef struct {
-    int *item;
-    int size;
-    int cur_length;
-}Path;
+	int size;
+	int *items;
+} Path;
 
-void PathInit(Path *P, int size); //using DMA
-int PathAddEntry(Path *P, int entry );
-int PathRemoveEntry(Path *P );
-void PathPrint(Path P);
+void pathInit(Path *P, int size);
 
-//add all this shit
+void pathRead(Path *P);
+
+void pathAdd(Path *P, int var, int index);
+
+void pathPrint(Path *P);
