@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "vector.h"
+
 /*
 Possible method:
 Interate randomly with math.rand to and if statements to attempt to get
@@ -13,11 +14,10 @@ Beause starting is 0, make algorithm to print out the shortest path to N-1 of th
 */
 
 
-
 int main() {
 	
     int size;
-	Vector vector;
+	Vector vector; // init vector
     int var;
 
 	printf("Input size of vector: ");
@@ -36,8 +36,9 @@ int main() {
         else
 		vectorAdd(&vector, var, i);
 	}
-    vectorAdd(&vector, 0, size);
+    vectorAdd(&vector, 0, size); // Add the final 0
     
     // output the vectors, DEBUG
 	vectorPrint(&vector);
+    
 }

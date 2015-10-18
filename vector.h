@@ -4,7 +4,9 @@ typedef struct {
   int *item;     // array of integers storing
 } Vector;
 
-void VectorRead(Vector *V);
+void vectorRead(Vector *V);
+
+//int vectorSize
 
 void vectorInit(Vector *V, int size);
 
