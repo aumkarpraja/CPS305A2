@@ -6,7 +6,8 @@
 void pathRead(Path *P) {
         printf("%d", P->size);
         //printf("%lud ", sizeof(V) / sizeof(V[0]));
-        for (int i = 0; i < sizeof(P) / sizeof(P[0]); i++) {
+        int i;
+        for (i = 0; i < sizeof(P) / sizeof(P[0]); i++) {
                 printf("%d ", P->items[i]);
         }
 }
@@ -23,7 +24,8 @@ void pathAdd(Path *P, int var, int index) {
 
 //pathPrint function
 void pathPrint(Path *P) {
-        for (int i = 0; i < P->size; i++) {
+        int i;
+        for (i = 0; i < P->size; i++) {
                 printf("Vector Val: %d\n", P->items[i]);
         }
 

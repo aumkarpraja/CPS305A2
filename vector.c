@@ -7,9 +7,15 @@
 void vectorRead(Vector *V) {
 	printf("%d", V->size);
     // Loop through size of vector and ask for each vector, (or all in one row if the user desires)
-	for (int i = 0; i < sizeof(V) / sizeof(V[0]); i++) {
+  int i;
+	for (i = 0; i < sizeof(V) / sizeof(V[0]); i++) {
 		printf("%d ", V->item[i]);
 	}
+}
+
+int vectorGet(Vector *V, int index)
+{
+  return V->item[index];
 }
 
 //vectorInit function
@@ -28,7 +34,8 @@ void vectorAdd(Vector *V, int var, int index) {
 //vectorPrint function
 //Prints the vector value
 void vectorPrint(Vector *V) {
-	for (int i = 0; i < V->size; i++) {
+  int i;
+	for (i = 0; i < V->size; i++) {
 		printf("Vector Val: %d\n", V->item[i]);
 	}
 }

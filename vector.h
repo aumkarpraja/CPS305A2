@@ -6,7 +6,7 @@ typedef struct {
 
 void vectorRead(Vector *V);
 
-//int vectorSize
+int vectorGet(Vector *V, int index);
 
 void vectorInit(Vector *V, int size);
 
