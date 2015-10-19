@@ -8,8 +8,6 @@ void vectorRead(Vector *V);
 
 int vectorGet(Vector *V, int index);
 
-void vectorInit(Vector *V, int size);
-
 void vectorAdd(Vector *V, int var, int index);
 
 void vectorPrint(Vector *V);
