@@ -64,24 +64,26 @@
 		}
 		// RECURSIVE CASE, n-1 each time if a solution isn't found, no solution if it
 		// goes all the way to the end.
+		int lastPosition = 0;
 		while (1)
 		{
-		//	if (position < size - 1)
+			if (position < size - 1){
 			position = position + V->item[position];
-			//else if (position > size - 1)
-		//	position = position - V->item[position];
-
+			position = lastPosition;
+			}
+			// overflow case, NEEDS TO BE FIXED
+			if (position > size - 1)
+			{
+				position = position - lastPosition;
+				position = position - V->item[position];
+			}///////////////
 			printf("next index: %d\n", position); // DEBUG
 			if (position == size-1)
 			{
 				printf("Path was found!\n");
 				return 1;
 			}
-			if (position > size - 1)
-			{
-				printf("No solution");
-				return 0;
-			}
+
 		}
 	}
 
