@@ -36,6 +36,6 @@ void vectorAdd(Vector *V, int var, int index) {
 void vectorPrint(Vector *V) {
   int i;
 	for (i = 0; i < V->size; i++) {
-		printf("Vector Val: %d\n", V->item[i]);
+		printf("[%d] Vector Val: %d\n",i, V->item[i]);
 	}
 }
