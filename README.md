@@ -3,6 +3,8 @@ A program to help find paths through a vector system.
 
 ###What does it do?
 ------------------------------
+This is written in C.
+
 WIP
 
 ###How To Run
